@@ -1,0 +1,21 @@
+.inputTextLabel{
+  position: relative;
+  .icon{
+    position: absolute;
+    left: 25px;
+    font-size: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .input{
+    padding: 25px 0 25px 65px;
+    font-size: 16px;
+    width: 55%;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+  }
+}
