@@ -1,17 +1,11 @@
 import {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import styles from './ListOfCategories.module.scss'
-
+import callToAPI from "../../api";
 const ListOfCategories = () => {
     const[categories, setCategories] = useState([]);
      useEffect(() => {
-        fetch('http://localhost:8080/categories', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-            .then(res => res.json())
+        callToAPI('/categories', 'get')
             .then(res => setCategories(res))
     }, [])
     return(
@@ -19,9 +13,9 @@ const ListOfCategories = () => {
             {categories.map(category => {
                 return(
                     <li key={category._id} className={styles.category}>
-                        <Link to={`/advertisements/category/${category._id}`} className={styles.categoryLink}>
+                        <Link to={`/ogloszenia/kategoria/${category._id}`} className={styles.categoryLink}>
                             <div className={styles.circle} />
-                            <span className={styles.categoryName}>{category.name}</span>
+                            <span className={styles.categoryName}>{category.name.charAt(0).toUpperCase() + category.name.slice(1)}</span>
                         </Link>
                     </li>
                 )

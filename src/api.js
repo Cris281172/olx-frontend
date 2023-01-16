@@ -1,13 +1,18 @@
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://olx-backend.onrender.com'
 
-const callToAPI = async (url, method = 'get', body = {}) => {
-    const response = await fetch(BASE_URL + url, {
+const callToAPI = async (url, method = 'get', body = null) => {
+    const config = {
         method,
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(body)
-    });
+    }
+
+    if(body){
+        config.body = JSON.stringify(body);
+    }
+
+    const response = await fetch(BASE_URL + url, config);
     const data = await response.json();
     console.log(data);
     return await data;

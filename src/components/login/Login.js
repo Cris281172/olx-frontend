@@ -1,6 +1,7 @@
 import {useState} from 'react'
-import callToAPI from '../api'
+import callToAPI from '../../api'
 import {Link} from 'react-router-dom';
+import locationHref from "../../helpers/locationHref";
 
 const Login = () => {
     const[emailValue, setEmailValue] = useState('');
@@ -10,20 +11,21 @@ const Login = () => {
     const loginForm = async e => {
         e.preventDefault();
 
-       const token = await callToAPI('/login', 'post', {
+       callToAPI('/login', 'post', {
            email: emailValue,
            password: passwordValue,
        })
+           .then(res => {
+               const now = new Date();
+               now.setTime(now.getTime() + 1000 * 60 * 60);
 
-        if(token.error){
-            setSendLoginStatus(true);
-        }
-        else{
-            const now = new Date();
-            now.setTime(now.getTime() + 1000 * 60 * 60);
+               document.cookie = `token=${res.token};expires=${now.toUTCString()};path=/`;
+               locationHref('/')
+           })
+           .catch(err => {
+               setSendLoginStatus(true);
+           })
 
-            document.cookie = `token=${token.token};expires=${now.toUTCString()};path=/`;
-        }
 
     }
 

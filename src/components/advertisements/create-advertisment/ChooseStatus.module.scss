@@ -1,0 +1,21 @@
+.statusList{
+  width: 50%;
+  padding: 16px;
+  background-color: #f2f4f5;
+  border-top: 2px solid #002d32;
+  transition: 0.5s;
+  .item{
+    margin: 0 0 15px 0;
+    &:hover{
+      color: #002d32;
+      cursor: pointer;
+    }
+    &:nth-last-child(1){
+      margin: 0;
+    }
+  }
+}
+
+.active{
+  height: 100%;
+}

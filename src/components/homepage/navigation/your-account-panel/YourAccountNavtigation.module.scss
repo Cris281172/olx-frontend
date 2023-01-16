@@ -1,0 +1,34 @@
+.yourAccount {
+  padding: 0 24px;
+  color: #7f9799;
+  font-size: 16px;
+  margin: 20px 0 10px 0;
+}
+
+.list{
+  margin: 10px 0;
+  .item{
+    cursor: pointer;
+    padding: 10px 24px;
+    transition: 0.4s;
+    &:hover{
+      background-color: #002F34;
+      .link{
+        color: #fff;
+      }
+    }
+    .link{
+      color: #002F34;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}
+
+.logout{
+  margin: 0;
+  border-top: 1px solid #d8dfe0;
+  .item{
+    padding: 17px 24px;
+  }
+}

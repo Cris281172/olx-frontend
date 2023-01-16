@@ -1,26 +1,28 @@
 import {Routes, Route} from 'react-router-dom';
 import Layout from '../components/Layout'
 import Home from '../components/homepage/Home'
-import Register from '../components/Register'
+import Registration from '../components/registration/Registration'
 import ResetPassword from '../components/ResetPassword'
-import Login from '../components/Login'
-import NoMatch from "../components/NoMatch";
-import Advertisements from '../components/advertisements/Advertisements'
-import ChosenAdvertisement from "../components/advertisements/ChosenAdvertisement";
+import Login from '../components/login/Login'
+import NoMatch from "../components/no-match/NoMatch";
+import DisplayingAdvertisements from '../components/advertisements/advertisements/DisplayingAdvertisements'
+import ChosenAdvertisement from "../components/advertisements/chosen-advertisement/ChosenAdvertisement";
 import ListOfCategories from "../components/categories/ListOfCategories";
+import Advertisements from "../components/advertisements/advertisements/Advertisements";
 
 const UnLoggedRoutesWrapper = () => {
     return(
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="/register" element={<Register />} />
+                <Route path="/rejestracja" element={<Registration />} />
                 <Route path="/reset" element={<ResetPassword />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/advertisements" element={<Advertisements />} />
-                <Route path="/advertisement/:id" element={<ChosenAdvertisement />} />
-                <Route path="/advertisements/category/:id" element={<Advertisements />} />
-                <Route path="/categories" element={<ListOfCategories />} />
+                <Route path="/logowanie" element={<Login />} />
+                <Route path="/ogloszenia" element={<Advertisements />} />
+                <Route path="/ogloszenie/:id" element={<ChosenAdvertisement />} />
+                <Route path="/ogloszenia/kategoria/:id" element={<DisplayingAdvertisements />} />
+                <Route path="/kategorie" element={<ListOfCategories />} />
+                <Route path="*" element={<NoMatch />} />
             </Route>
         </Routes>
         )

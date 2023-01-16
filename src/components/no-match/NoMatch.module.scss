@@ -1,0 +1,21 @@
+.noMatch{
+  display: flex;
+  align-items: center;
+  margin: 120px 0 0 0;
+  flex-direction: column;
+  .errorStatus{
+    font-size: 48px;
+  }
+  .errorText{
+    font-size: 24px;
+  }
+  .homeLink{
+    background-color: #002f34;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 50px;
+    margin: 18px 0 0 0;
+    text-decoration: none;
+  }
+}

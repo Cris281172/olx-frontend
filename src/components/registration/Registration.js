@@ -1,7 +1,7 @@
 import {useState} from "react";
-import callToAPI from '../api'
+import callToAPI from '../../api'
 
-const Register = () => {
+const Registration = () => {
     const[emailValue, setEmailValue] = useState('');
     const[passwordValue, setPasswordValue] = useState('');
     console.log();
@@ -31,4 +31,4 @@ const Register = () => {
     )
 }
 
-export default Register;
+export default Registration;

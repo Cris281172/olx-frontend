@@ -1,0 +1,28 @@
+.advertisement{
+  background: #fff;
+  padding: 15px;
+  .image{
+    width: 100%;
+    height: 218px;
+    background-color: gray;
+  }
+  .titleAdvertisement{
+    font-size: 16px;
+    color: #002f34;
+    margin: 15px 0;
+  }
+  .information{
+    color: #406367;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .priceFavoriteWrapper{
+    display: flex;
+    justify-content: space-between;
+    .price{
+      font-size: 16px;
+      color: #002f34;
+      font-weight: 500;
+    }
+  }
+}

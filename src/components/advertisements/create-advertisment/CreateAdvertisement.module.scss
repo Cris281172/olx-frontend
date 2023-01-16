@@ -1,0 +1,111 @@
+.createAdvertisement{
+  background-color: #f2f4f5;
+  .createAdvertisementWrapper{
+    margin: 0 auto;
+    max-width: 1286px;
+    background-color: #fff;
+    .title{
+      font-size: 32px;
+      font-weight: 700;
+      color: #002F34FF;
+      padding: 48px 0 30px 0;
+      background-color: #f2f4f5;
+    }
+    .createAdvertisementForm{
+      background-color: #f2f4f5;
+      .section{
+        background-color: #fff;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 32px;
+        .label{
+          width: 800px;
+          position: relative;
+          display: block;
+          .labelTitle{
+            margin: 0 0 8px 0;
+            color: #002F34FF;
+            font-size: 14px;
+          }
+          .input{
+            font-size: 16px;
+            background-color: #F2F4F5FF;
+            width: 100%;
+            border: none;
+            color: #002F34FF;
+            border-radius: 4px;
+            padding: 16px 48px 16px 16px;
+
+            &:focus{
+              outline: none;
+              border-bottom: 2px solid #000;
+
+            }
+          }
+          .chooseCategory{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            align-items: center;
+            .chooseCategoryTitle{
+              font-size: 16px;
+              color: #002F34FF;
+            }
+            .icon{
+              height: 24px;
+              width: 24px;
+              color: #002F34FF;
+            }
+          }
+          .chooseStatus{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            align-items: center;
+            .chooseStatusTitle{
+              font-size: 16px;
+              color: #002F34FF;
+            }
+            .icon{
+              height: 24px;
+              width: 24px;
+              color: #002F34FF;
+            }
+          }
+          .location{
+            width: 50%;
+          }
+          .price{
+            width: 50%;
+          }
+          .descriptionTextArea{
+            height: 250px;
+            resize: none;
+          }
+          .error{
+            border-bottom: 2px solid #FF5636FF;
+            &:focus{
+              border-bottom: 2px solid #FF5636FF;
+            }
+          }
+          .errorMessage{
+            color: #FF5636FF;
+            font-size: 14px;
+            padding: 6px 0;
+          }
+        }
+        .submitButton{
+          cursor: pointer;
+          font-size: 16px;
+          background-color: #002F34FF;
+          border: 5px solid #002F34FF;
+          border-radius: 4px;
+          color: #fff;
+          padding: 10px 30px 8px;
+        }
+      }
+    }
+  }
+}

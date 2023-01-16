@@ -1,0 +1,12 @@
+.paginationAdvertisements{
+  display: flex;
+  justify-content: center;
+  background-color: #f2f4f5;
+  .pageButtons{
+    display: flex;
+    .paginationItem{
+      margin: 0 8px 0 0;
+
+    }
+  }
+}

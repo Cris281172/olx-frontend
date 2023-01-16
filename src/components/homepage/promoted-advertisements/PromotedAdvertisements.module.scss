@@ -1,0 +1,19 @@
+.promotedAdvertisements{
+  background-color: #f2f4f5;
+  padding: 80px 0;
+  .promotedAdvertisementsWrapper{
+    max-width: 1286px;
+    margin: 0 auto;
+    .title{
+      margin: 0 0 50px 0;
+      font-size: 32px;
+      color: #002f34;
+      text-align: center;
+    }
+    .advertisements{
+      gap: 15px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

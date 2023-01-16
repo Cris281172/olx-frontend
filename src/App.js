@@ -6,7 +6,6 @@ import useAuth from "./hooks/useAuth";
 
 function App() {
     const auth = useAuth();
-    console.log(auth)
   return (
       <BrowserRouter>
           {auth ? <LoggedRoutesWrapper /> : <UnLoggedRoutesWrapper />}

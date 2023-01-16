@@ -7,10 +7,17 @@
   transition: 0.4s;
   cursor: pointer;
   &:hover{
-    color: white;
     background-color: #002f34;
+    .searchButtonSpan{
+      color: white;
+    }
+    .icon{
+      color: white;
+    }
   }
   .searchButtonSpan{
+    color: #002f34;
+    text-decoration: none;
     margin: 0 15px 0 0;
     font-size: 16px;
   }

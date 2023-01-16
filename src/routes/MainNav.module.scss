@@ -1,49 +1,75 @@
-.mainNav{
-  background-color: #002f34;
-  padding: 15px 0;
-  .navList{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1286px;
-    margin: 0 auto;
-    .item{
-      .logo{
-        width: 71px;
-        height: 40px;
-      }
-    }
-    .rightNav{
+.mainNavWrapper{
+  width: 100%;
+  height: 72.25px;
+  .mainNav{
+    background-color: #002f34;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    .navList{
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1286px;
+      margin: 0 auto;
       .item{
-        position: relative;
+        .logo{
+          width: 71px;
+          height: 40px;
+        }
+      }
+      .rightNav{
         display: flex;
-        align-items: center;
-        margin: 0 0 0 80px;
-        .link{
+        .item{
+          position: relative;
           display: flex;
           align-items: center;
-          color: #fff;
-          text-decoration: none;
-          .icon{
-            font-size: 24px;
-            margin: 0 15px 0 0;
+          margin: 0 0 0 40px;
+          &:hover{
+            .link{
+              .icon{
+                color: #7f9799;
+              }
+              .text{
+                color: #7f9799;
+              }
+            }
           }
-          .icon.arrow{
-            margin: 0 0 0 8px;
-            font-size: 15px;
+          &:nth-child(2){
+            .link{
+              .icon{
+                margin: 0;
+              }
+            }
           }
-          .text{
-            font-weight: 500;
-            font-size: 16px;
+          .link{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            .icon{
+              transition: 0.3s;
+              font-size: 24px;
+              margin: 0 15px 0 0;
+            }
+            .icon.arrow{
+              margin: 0 0 0 8px;
+              font-size: 15px;
+            }
+            .text{
+              transition: 0.3s;
+              font-weight: 500;
+              font-size: 16px;
+            }
           }
-        }
-        .link.createAdvertisement{
-          background-color: #fff;
-          color: #002f34;
-          padding: 13px 22px;
-          box-shadow: inset 0 0 0 8px #fff;
-          border-radius: 4px;
+          .link.createAdvertisement{
+            background-color: #fff;
+            color: #002f34;
+            padding: 13px 22px;
+            box-shadow: inset 0 0 0 8px #fff;
+            border-radius: 4px;
+          }
         }
       }
     }

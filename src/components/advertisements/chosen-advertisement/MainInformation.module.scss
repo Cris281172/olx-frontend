@@ -1,0 +1,38 @@
+.mainInformation {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  .createdTime{
+    font-size: 12px;
+    color: #406367;
+  }
+  .title{
+    font-size: 32px;
+    color: #002F34;
+    margin: 8px 0 16px 0;
+  }
+  .price{
+    font-size: 40px;
+    color: #002F34;
+  }
+  .description{
+    margin: 24px 0 0 0;
+    .descriptionTitle{
+      text-transform: uppercase;
+      color: #002F34;
+      font-size: 24px;
+      margin: 0 0 16px 0;
+      font-weight: 700;
+    }
+    .text{
+      font-size: 16px;
+      color: #002F34;
+      white-space: pre-wrap;
+    }
+  }
+  .bottomContent{
+    padding: 16px 0;
+    border-top: 1px solid #7F9799;
+    margin: 24px 0 0 0;
+  }
+}
