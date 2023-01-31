@@ -1,9 +1,9 @@
 import {Routes, Route} from 'react-router-dom';
 import Layout from '../components/Layout'
 import Home from '../components/homepage/Home'
-import Registration from '../components/registration/Registration'
+import Registration from '../components/registration-login-panel/registration/Registration'
 import ResetPassword from '../components/ResetPassword'
-import Login from '../components/login/Login'
+import Login from '../components/registration-login-panel/login/Login'
 import NoMatch from '../components/no-match/NoMatch'
 import CreateAdvertisement from "../components/advertisements/create-advertisment/CreateAdvertisement";
 import DisplayingAdvertisements from "../components/advertisements/advertisements/DisplayingAdvertisements";
@@ -16,9 +16,7 @@ const UnLoggedRoutesWrapper = () => {
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="/rejestracja" element={<Registration />} />
                 <Route path="/reset" element={<ResetPassword />} />
-                <Route path="/logowanie" element={<Login />} />
                 <Route path="/ogloszenia" element={<Advertisements />} />
                 <Route path="/ogloszenie/:id" element={<ChosenAdvertisement />} />
                 <Route path="/ogloszenia/kategoria/:id" element={<DisplayingAdvertisements />} />

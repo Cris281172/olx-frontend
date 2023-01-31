@@ -1,0 +1,85 @@
+.cookieWrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999999;
+  background: rgba(0,0,0,0.5);
+  transition: 5s;
+  .cookie{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    background: #fff;
+    padding: 16px 0 16px 32px;
+    .section{
+      width: 40%;
+      .title{
+        color: #002F34;
+        margin: 0 0 10px 0;
+        font-weight: bold;
+      }
+      .text{
+        color: #002F34;
+      }
+    }
+    .privacy{
+      .title{
+        font-size: 22px;
+      }
+      .text{
+        font-size: 14px;
+        border-right: 1px solid #d8d8d8;
+        padding: 0 16px 0 0;
+      }
+    }
+    .partners{
+      padding: 0 0 0 16px;
+      .title{
+        font-size: 18px;
+      }
+      .text{
+        font-size: 14px;
+      }
+      .listOfPartners{
+        font-size: 14px;
+        margin: 10px 0 0 0;
+        display: inline-block;
+        text-decoration: none;
+        color: #002F34;
+        font-weight: bold;
+      }
+    }
+    .buttonsWrapper{
+      position: absolute;
+      right: 4%;
+      display: flex;
+      flex-direction: column;
+      top: 50%;
+      transform: translateY(-50%);
+      .button{
+        padding: 12px 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .accept{
+        background-color: #002F34;
+        border-color: #002F34;
+        color: #FFFFFF;
+      }
+      .showGoals{
+        color: #002F34;
+        border-color: #002F34;
+        background-color: #FFFFFF;
+        margin: 6px 0 0 0;
+      }
+    }
+
+  }
+
+}
+
+.hidden{
+  opacity: 0;
+}

@@ -1,0 +1,23 @@
+.olxInformationFooter{
+  background: #cbf7ee;
+  padding: 140px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .informationText{
+    font-size: 14px;
+    margin: 40px 0 40px 0;
+    max-width: 800px;
+    text-align: center;
+    line-height: 24px;
+    color: #002f34;
+  }
+  .socialsIcons{
+    .icon{
+      margin: 0 16px 0 0;
+      width: 36px;
+      height: 36px;
+      color: #687981;
+    }
+  }
+}

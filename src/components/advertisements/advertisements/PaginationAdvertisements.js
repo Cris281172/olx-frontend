@@ -7,7 +7,7 @@ const PaginationAdvertisements = ({setAdvertisements}) => {
     const [currentPage, setCurrentPage] = useState(1);
 
     const getFromApi = () => {
-        callToAPI(`/advertisements/promoted?page=${currentPage}`, 'get')
+        callToAPI(`/advertisement?type=all`, 'get')
             .then(res => {
                 setNumberOfPages(res.pages)
                 setAdvertisements(res.advertisements)
@@ -18,6 +18,7 @@ const PaginationAdvertisements = ({setAdvertisements}) => {
             top: 0,
             behavior: "smooth",
         });
+        console.log(page);
         setCurrentPage(page)
     }
 

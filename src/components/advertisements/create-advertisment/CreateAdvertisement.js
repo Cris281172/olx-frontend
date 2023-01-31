@@ -49,7 +49,6 @@ const CreateAdvertisement = () => {
                 <Formik
                     initialValues={{ title: '', category: chosenCategory, location: '', description: '',  price: '', status: chosenCondition }}
                     onSubmit={(values) => {
-                        console.log(values)
                         callToAPI('/advertisement/create', 'post', {
                             title: values.title,
                             description: values.description,

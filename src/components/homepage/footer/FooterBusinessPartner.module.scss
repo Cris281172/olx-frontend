@@ -1,0 +1,26 @@
+.footerBusinessPartner{
+  display: flex;
+  justify-content: center;
+  background-color: #002f34;
+  align-items: center;
+  .textWrapper{
+    margin: 0 150px 0 75px;
+    .standOut{
+      font-size: 16px;
+      color: #7f9799;
+    }
+    .postOffer{
+      font-size: 20px;
+      margin: 5px 0 0 0;
+      color: #fff;
+    }
+  }
+  .seeMore{
+    background: #fff;
+    color: #002f34;
+    font-size: 14px;
+    padding: 11px 22px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+}

@@ -9,8 +9,8 @@ const AdvertisementName = () => {
     let advertisementName = (numberOfAdvertisements < 5) ? ' ogłoszenia' :' ogłoszeń';
     const location = useLocation();
     useEffect(() => {
-        callToAPI('/advertisement', 'get')
-            .then(res => setNumberOfAdvertisements(res.length))
+        callToAPI('/advertisement?type=all', 'get')
+            .then(res => setNumberOfAdvertisements(res.total))
         setUrlLocation(location.pathname)
     }, [])
     return(

@@ -7,9 +7,8 @@ const DisplayingAdvertisements = ({setAdvertisements, advertisements}) => {
 
     const[advertisementsWithCategory, setAdvertisementsWithCategory] = useState([]);
     const params = useParams();
-    console.log(advertisements);
     useEffect(() => {
-        callToAPI('/promoted', 'get')
+        callToAPI('/advertisement?type=all', 'get')
             .then(res => setAdvertisements(res.advertisements))
         // (`http://localhost:8080/category/${params.id}/advertisements`, {
         //     method: "GET",

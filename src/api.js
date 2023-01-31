@@ -1,4 +1,4 @@
-const BASE_URL = 'https://olx-backend.onrender.com'
+const BASE_URL = 'http://localhost:8080'
 
 const callToAPI = async (url, method = 'get', body = null) => {
     const config = {
@@ -14,7 +14,6 @@ const callToAPI = async (url, method = 'get', body = null) => {
 
     const response = await fetch(BASE_URL + url, config);
     const data = await response.json();
-    console.log(data);
     return await data;
 }
 

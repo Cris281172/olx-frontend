@@ -1,0 +1,1 @@
+export const COOKIE_VISIBLE = 'COOKIE_VISIBLE';

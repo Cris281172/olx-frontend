@@ -5,7 +5,7 @@ import callToAPI from "../../../api";
 const PromotedAdvertisements = () => {
     const[promotedAdvertisements, setPromotedAdvertisements] = useState([]);
     useEffect(() => {
-        callToAPI('/advertisements/promoted?limit=12', 'get')
+        callToAPI('/advertisement?type=promoted', 'get')
             .then(res => setPromotedAdvertisements(res.advertisements))
     },[])
 
